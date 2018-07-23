@@ -162,18 +162,14 @@
 					<h3>Filters: </h3>
 				</div>
 				<div class="col-md-2">
+					
+				</div>
+				<div class="col-md-2">
 					<label>Shape: </label><br>
 					<input type="checkbox" name="shape" value="rectangle">&nbsp;Rectangle <br>
 					<input type="checkbox" name="shape" value="square">&nbsp;Square <br>
 					<input type="checkbox" name="shape" value="circle">&nbsp;Circle <br>
 					<input type="checkbox" name="shape" value="heart">&nbsp;Heart <br>
-				</div>
-				<div class="col-md-2">
-					<label>Flavor: </label><br>
-					<input type="checkbox" name="flavor" value="blackforest">&nbsp;Black forest <br>
-					<input type="checkbox" name="flavor" value="pineapple">&nbsp;Pineapple <br>
-					<input type="checkbox" name="flavor" value="redvelvet">&nbsp;Red velvet <br>
-					<input type="checkbox" name="flavor" value="fruit">&nbsp;Fruit bread <br>
 				</div>
 				<div class="col-md-2">
 					<label>Price range: </label><br>
@@ -332,6 +328,84 @@
 									<tr>
 										<th>Shape:</th>
 										<td>Square</td>
+									</tr>
+									<tr>
+										<th>Price:</th>
+										<td>&#8377; 350</td>
+									</tr>
+									<tr>
+										<th>Ingredient:</th>
+										<td>Value</td>
+									</tr>
+								</table>
+							<a href="#">Add to Cart</a>						
+			            </div>			     
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div><br></div>
+		<div class="container">
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/bread3.jpg" alt="">
+			            <div class="overlay">
+			                <h2>bread</h2>
+							<table class="table">
+									<tr>
+										<th>Shape:</th>
+										<td>Square</td>
+									</tr>
+									<tr>
+										<th>Price:</th>
+										<td>&#8377; 350</td>
+									</tr>
+									<tr>
+										<th>Ingredient:</th>
+										<td>Value</td>
+									</tr>
+								</table>
+							<a href="#">Add to Cart</a>
+			            </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/bread2.jpg" alt="">
+			            <div class="overlay">
+			                <h2>bread</h2>
+							<table class="table">
+									<tr>
+										<th>Shape:</th>
+										<td>Rectangle</td>
+									</tr>
+									<tr>
+										<th>Price:</th>
+										<td>&#8377; 350</td>
+									</tr>
+									<tr>
+										<th>Ingredient:</th>
+										<td>Value</td>
+									</tr>
+								</table>
+							<a href="#">Add to Cart</a>
+			            </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/bread.jpg" alt="">
+			            <div class="overlay">
+			                <h2>bread</h2>						
+							<table class="table">
+									<tr>
+										<th>Shape:</th>
+										<td>Round</td>
 									</tr>
 									<tr>
 										<th>Price:</th>

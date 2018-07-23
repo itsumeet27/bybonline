@@ -164,7 +164,6 @@
 				<div class="col-md-2">
 					<label>Shape: </label><br>
 					<input type="checkbox" name="shape" value="rectangle">&nbsp;Rectangle <br>
-					<input type="checkbox" name="shape" value="square">&nbsp;Square <br>
 					<input type="checkbox" name="shape" value="circle">&nbsp;Circle <br>
 					<input type="checkbox" name="shape" value="heart">&nbsp;Heart <br>
 				</div>
@@ -173,19 +172,17 @@
 					<input type="checkbox" name="flavor" value="blackforest">&nbsp;Black forest <br>
 					<input type="checkbox" name="flavor" value="pineapple">&nbsp;Pineapple <br>
 					<input type="checkbox" name="flavor" value="redvelvet">&nbsp;Red velvet <br>
-					<input type="checkbox" name="flavor" value="fruit">&nbsp;Fruit Pastries <br>
+					<input type="checkbox" name="flavor" value="fruit">&nbsp;Fruit pastries <br>
 				</div>
 				<div class="col-md-2">
 					<label>Price range: </label><br>
 					<span id="slider_value" style="color:black;text-align: center">0</span>
-					<input width="400" type="range" min="0" max="1499" name="sld3" value="499" onchange="show_value(this.value);">1499
+					<input width="400" type="range" min="0" max="499" name="sld3" value="199" onchange="show_value(this.value);">499
 				</div>
 				<div class="col-md-2">
-					<label>Weight: </label><br>
-					<input type="checkbox" name="weight" value="0.5">&nbsp;0.5 kg <br>
-					<input type="checkbox" name="weight" value="1">&nbsp;1 kg <br>
-					<input type="checkbox" name="weight" value="2">&nbsp;2 kg <br>
-					<input type="checkbox" name="weight" value="2.5">&nbsp;2.5 kg <br>
+					<label>Veg: </label><br>
+					<input type="radio" name="veg" value="yes">&nbsp;Yes <br>
+					<input type="radio" name="veg" value="no">&nbsp;No <br>
 				</div>
 				<div class="col-md-2">
 					<input type="submit" name="submit" value="Submit"><br>
@@ -332,6 +329,84 @@
 								<tr>
 									<th>Price:</th>
 									<td>&#8377; 75</td>
+								</tr>
+								<tr>
+									<th>Veg:</th>
+									<td>Yes</td>
+								</tr>
+								<tr>
+									<th>Ingredient:</th>
+									<td>Value</td>
+								</tr>
+							</table>
+							<a href="#">Add to Cart</a>						
+			            </div>			     
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div><br></div>
+		<div class="container">
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/pastry1.jpg" alt="">
+			            <div class="overlay">
+			                <h2>Pastries</h2>
+							<table class="table">
+								<tr>
+									<th>Price:</th>
+									<td>&#8377; 35</td>
+								</tr>
+								<tr>
+									<th>Veg:</th>
+									<td>No</td>
+								</tr>
+								<tr>
+									<th>Ingredient:</th>
+									<td>Value</td>
+								</tr>
+							</table>
+							<a href="#">Add to Cart</a>
+			            </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/pastry2.jpg" alt="">
+			            <div class="overlay">
+			                <h2>Pastries</h2>
+							<table class="table">
+								<tr>
+									<th>Price:</th>
+									<td>&#8377; 50</td>
+								</tr>
+								<tr>
+									<th>Veg:</th>
+									<td>No</td>
+								</tr>
+								<tr>
+									<th>Ingredient:</th>
+									<td>Value</td>
+								</tr>
+							</table>
+							<a href="#">Add to Cart</a>
+			            </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/pastry3.jpg" alt="">
+			            <div class="overlay">
+			                <h2>Pastries</h2>						
+							<table class="table">
+								<tr>
+									<th>Price:</th>
+									<td>&#8377; 45</td>
 								</tr>
 								<tr>
 									<th>Veg:</th>

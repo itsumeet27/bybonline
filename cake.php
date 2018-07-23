@@ -421,6 +421,120 @@
 			</div>
 		</div>
 		<div><br></div>
+		<div class="container">
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/cake1.png" alt="">
+			            <div class="overlay">
+			                <h2>Cake</h2>
+							<table class="table">
+								<tr>
+									<th>Weight:</th>
+									<td>0.5 kg</td>
+								</tr>
+								<tr>
+									<th>Price:</th>
+									<td>&#8377; 350</td>
+								</tr>
+								<tr>
+									<th>Shape:</th>
+									<td>Round</td>
+								</tr>
+								<tr>
+									<th>Sugar free:</th>
+									<td>Yes</td>
+								</tr>
+								<tr>
+									<th>Veg:</th>
+									<td>Yes</td>
+								</tr>
+								<tr>
+									<th>Ingredient:</th>
+									<td>Value</td>
+								</tr>
+							</table>
+							<a href="#">Add to Cart</a>
+			            </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/cake2.jpg" alt="">
+			            <div class="overlay">
+			                <h2>Cake</h2>
+							<table class="table">
+								<tr>
+									<th>Weight:</th>
+									<td>0.5 kg</td>
+								</tr>
+								<tr>
+									<th>Price:</th>
+									<td>&#8377; 350</td>
+								</tr>
+								<tr>
+									<th>Shape:</th>
+									<td>Round</td>
+								</tr>
+								<tr>
+									<th>Sugar free:</th>
+									<td>Yes</td>
+								</tr>
+								<tr>
+									<th>Veg:</th>
+									<td>Yes</td>
+								</tr>
+								<tr>
+									<th>Ingredient:</th>
+									<td>Value</td>
+								</tr>
+							</table>
+							<a href="#">Add to Cart</a>
+			            </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/cake3.jpg" alt="">
+			            <div class="overlay">
+			                <h2>Cake</h2>						
+							<table class="table">
+								<tr>
+									<th>Weight:</th>
+									<td>0.5 kg</td>
+								</tr>
+								<tr>
+									<th>Price:</th>
+									<td>&#8377; 350</td>
+								</tr>
+								<tr>
+									<th>Shape:</th>
+									<td>Round</td>
+								</tr>
+								<tr>
+									<th>Sugar free:</th>
+									<td>Yes</td>
+								</tr>
+								<tr>
+									<th>Veg:</th>
+									<td>Yes</td>
+								</tr>
+								<tr>
+									<th>Ingredient:</th>
+									<td>Value</td>
+								</tr>
+							</table>
+							<a href="#">Add to Cart</a>						
+			            </div>			     
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div><br></div>
 	</div>
 
 <?php

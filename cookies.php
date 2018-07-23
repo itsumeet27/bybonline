@@ -123,7 +123,7 @@
 					border: 1px solid #654321;
 				}
 
-				.col-md-2 input[type='submit'], .col-md-2 input[type='reset']{
+				.col-md-3 input[type='submit'], .col-md-3 input[type='reset']{
 					padding: 7px 15px;
 					color: #fff;
 					font-size: 16px;
@@ -132,14 +132,14 @@
 					width: 100%;
 				}
 
-				.col-md-2 input[type='submit']:hover, .col-md-2 input[type='reset']:hover{
+				.col-md-3 input[type='submit']:hover, .col-md-3 input[type='reset']:hover{
 					color: #555;
 					background-color: #fff;
 					border: 1px solid #555;
 					transition-duration: 0.3s;
 				}
 
-				#filters .col-md-2 label{
+				#filters .col-md-3 label{
 					font-size: 16px;
 					font-family: Raleway;
 				}
@@ -153,41 +153,27 @@
 </head>
 
 	<hr>
-		<h1 align="center" id="user-head">cookies</h1>
+		<h1 align="center" id="user-head">Cookies</h1>
 	<hr>
 	<div class="row">
 		<div class="container">
 			<div id="filters">
-				<div class="col-md-2">
+				<div class="col-md-3">
 					<h3>Filters: </h3>
 				</div>
-				<div class="col-md-2">
-					<label>Shape: </label><br>
-					<input type="checkbox" name="shape" value="rectangle">&nbsp;Rectangle <br>
-					<input type="checkbox" name="shape" value="square">&nbsp;Square <br>
-					<input type="checkbox" name="shape" value="circle">&nbsp;Circle <br>
-					<input type="checkbox" name="shape" value="heart">&nbsp;Heart <br>
-				</div>
-				<div class="col-md-2">
-					<label>Flavor: </label><br>
-					<input type="checkbox" name="flavor" value="blackforest">&nbsp;Black forest <br>
-					<input type="checkbox" name="flavor" value="pineapple">&nbsp;Pineapple <br>
-					<input type="checkbox" name="flavor" value="redvelvet">&nbsp;Red velvet <br>
-					<input type="checkbox" name="flavor" value="fruit">&nbsp;Fruit cookies <br>
-				</div>
-				<div class="col-md-2">
+				<div class="col-md-3">
 					<label>Price range: </label><br>
 					<span id="slider_value" style="color:black;text-align: center">0</span>
-					<input width="400" type="range" min="0" max="1499" name="sld3" value="499" onchange="show_value(this.value);">1499
+					<input width="400" type="range" min="299" max="1499" name="sld3" value="749" onchange="show_value(this.value);">2499
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-3">
 					<label>Weight: </label><br>
 					<input type="checkbox" name="weight" value="0.5">&nbsp;0.5 kg <br>
 					<input type="checkbox" name="weight" value="1">&nbsp;1 kg <br>
 					<input type="checkbox" name="weight" value="2">&nbsp;2 kg <br>
 					<input type="checkbox" name="weight" value="2.5">&nbsp;2.5 kg <br>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-3">
 					<input type="submit" name="submit" value="Submit"><br>
 					<input type="reset" name="reset" value="Reset">
 				</div>
@@ -197,7 +183,7 @@
 			<div class="col-md-4">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cookies.jpg" alt="">
+				        <img class="img-responsive" src="images/cookies6.jpg" alt="">
 			            <div class="overlay">
 			                <h2>Cookies</h2>
 							<table class="table">
@@ -222,7 +208,7 @@
 			<div class="col-md-4">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cookies2.jpg" alt="">
+				        <img class="img-responsive" src="images/cookies.jpg" alt="">
 			            <div class="overlay">
 			                <h2>cookies</h2>
 							<table class="table">
@@ -247,7 +233,7 @@
 			<div class="col-md-4">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cookies.jpg" alt="">
+				        <img class="img-responsive" src="images/cookies2.jpg" alt="">
 			            <div class="overlay">
 			                <h2>cookies</h2>						
 							<table class="table">
@@ -275,9 +261,87 @@
 			<div class="col-md-4">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cookies2.jpg" alt="">
+				        <img class="img-responsive" src="images/cookies3.jpg" alt="">
 			            <div class="overlay">
 			                <h2>cookies</h2>
+							<table class="table">
+									<tr>
+										<th>Weight:</th>
+										<td>0.5 kg</td>
+									</tr>
+									<tr>
+										<th>Price:</th>
+										<td>&#8377; 350</td>
+									</tr>
+									<tr>
+										<th>Ingredient:</th>
+										<td>Value</td>
+									</tr>
+								</table>
+							<a href="#">Add to Cart</a>
+			            </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/cookies4.jpg" alt="">
+			            <div class="overlay">
+			                <h2>cookies</h2>
+							<table class="table">
+									<tr>
+										<th>Weight:</th>
+										<td>0.5 kg</td>
+									</tr>
+									<tr>
+										<th>Price:</th>
+										<td>&#8377; 350</td>
+									</tr>
+									<tr>
+										<th>Ingredient:</th>
+										<td>Value</td>
+									</tr>
+								</table>
+							<a href="#">Add to Cart</a>
+			            </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/cookies5.jpg" alt="">
+			            <div class="overlay">
+			                <h2>cookies</h2>						
+							<table class="table">
+									<tr>
+										<th>Weight:</th>
+										<td>0.5 kg</td>
+									</tr>
+									<tr>
+										<th>Price:</th>
+										<td>&#8377; 350</td>
+									</tr>
+									<tr>
+										<th>Ingredient:</th>
+										<td>Value</td>
+									</tr>
+								</table>
+							<a href="#">Add to Cart</a>						
+			            </div>			     
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div><br></div>
+		<div class="container">
+			<div class="col-md-4">
+				<div width="300">
+				    <div class="hovereffect">
+				        <img class="img-responsive" src="images/cookies6.jpg" alt="">
+			            <div class="overlay">
+			                <h2>Cookies</h2>
 							<table class="table">
 									<tr>
 										<th>Weight:</th>
