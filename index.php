@@ -235,6 +235,7 @@
 			</script>
 			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 	</div>
+	<br>
 <!-- //banner-bottom -->
 <!-- banner-bottom-grids -->
 	<div class="banner-bottom-grids">
