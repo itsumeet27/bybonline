@@ -37,6 +37,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 </script>
 <!-- start-smooth-scrolling -->
+
+<style type="text/css">
+	.header-right nav {
+		position: absolute;
+	    top: -23%;
+	    left: 15.409% !important;
+	    color: #999;
+	    z-index: -1;
+	}
+
+	.header-right nav ul li i {
+	  font-size: 1.5em;
+	  background:#F3AD45;
+	  padding: 0.75em;
+	  border-radius: 50%;
+	  color: white;
+	  display: inline-block;
+	  overflow: hidden;
+	  text-shadow: 0px 0px #D5963A, 1px 1px #D5963A, 2px 2px #D5963A, 3px 3px #D5963A, 4px 4px #D5963A, 5px 5px #D5963A, 6px 6px #D5963A, 7px 7px #D5963A, 8px 8px #D5963A, 9px 9px #D5963A, 10px 10px #D5963A, 11px 11px #D5963A, 12px 12px #D5963A, 13px 13px #D5963A, 14px 14px #D5963A, 15px 15px #D5963A, 16px 16px #D5963A, 17px 17px #D5963A, 18px 18px #D5963A, 19px 19px #D5963A, 20px 20px #D5963A, 21px 21px #D5963A, 22px 22px #D5963A, 23px 23px #D5963A, 24px 24px #D5963A, 25px 25px #D5963A, 26px 26px #D5963A, 27px 27px #D5963A, 28px 28px #D5963A, 29px 29px #D5963A, 30px 30px #D5963A, 31px 31px #D5963A, 32px 32px #D5963A, 33px 33px #D5963A, 34px 34px #D5963A, 35px 35px #D5963A, 36px 36px #D5963A, 37px 37px #D5963A, 38px 38px #D5963A, 39px 39px #D5963A, 40px 40px #D5963A, 41px 41px #D5963A, 42px 42px #D5963A, 43px 43px #D5963A, 44px 44px #D5963A, 45px 45px #D5963A, 46px 46px #D5963A, 47px 47px #D5963A, 48px 48px #D5963A, 49px 49px #D5963A, 50px 50px #D5963A, 51px 51px #D5963A, 52px 52px #D5963A, 53px 53px #D5963A, 54px 54px #D5963A, 55px 55px #D5963A, 56px 56px #D5963A, 57px 57px #D5963A, 58px 58px #D5963A, 59px 59px #D5963A, 60px 60px #D5963A;
+	}
+
+	.header-right nav ul li.active i {
+	  background:#F3AD45;
+	  text-shadow: 0px 0px #D5963A, 1px 1px #D5963A, 2px 2px #D5963A, 3px 3px #D5963A, 4px 4px #D5963A, 5px 5px #D5963A, 6px 6px #D5963A, 7px 7px #D5963A, 8px 8px #D5963A, 9px 9px #D5963A, 10px 10px #D5963A, 11px 11px #D5963A, 12px 12px #D5963A, 13px 13px #D5963A, 14px 14px #D5963A, 15px 15px #D5963A, 16px 16px #D5963A, 17px 17px #D5963A, 18px 18px #D5963A, 19px 19px #D5963A, 20px 20px #D5963A, 21px 21px #D5963A, 22px 22px #D5963A, 23px 23px #D5963A, 24px 24px #D5963A, 25px 25px #D5963A, 26px 26px #D5963A, 27px 27px #D5963A, 28px 28px #D5963A, 29px 29px #D5963A, 30px 30px #D5963A, 31px 31px #D5963A, 32px 32px #D5963A, 33px 33px #D5963A, 34px 34px #D5963A, 35px 35px #D5963A, 36px 36px #D5963A, 37px 37px #D5963A, 38px 38px #D5963A, 39px 39px #D5963A, 40px 40px #D5963A, 41px 41px #D5963A, 42px 42px #D5963A, 43px 43px #D5963A, 44px 44px #D5963A, 45px 45px #D5963A, 46px 46px #D5963A, 47px 47px #D5963A, 48px 48px #D5963A, 49px 49px #D5963A, 50px 50px #D5963A, 51px 51px #D5963A, 52px 52px #D5963A, 53px 53px #D5963A, 54px 54px #D5963A, 55px 55px #D5963A, 56px 56px #D5963A, 57px 57px #D5963A, 58px 58px #D5963A, 59px 59px #D5963A, 60px 60px #D5963A;
+	}
+
+	.header-right nav ul li.active a{
+		color:#F3AD45;
+	}
+</style>
 </head>
 	
 <body>
@@ -58,11 +88,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li>
 								<a href="index.php"><i class="glyphicon glyphicon-home" aria-hidden="true"></i><span>Home</span></a>
 							</li>
-							<li class="active">
+							<li>
 								<a href="about.php"><i class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></i><span>About</span></a>
 							</li>
 							<li>
-								<a href="short-codes.html"><i class="glyphicon glyphicon-text-size" aria-hidden="true"></i><span>Special Offers</span></a>
+								<a href="specialoffers.php"><i class="glyphicon glyphicon-text-size" aria-hidden="true"></i><span>Special Offers</span></a>
 							</li>
 							<li>
 								<a href="login.php"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i><span>Login</span></a>

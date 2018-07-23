@@ -35,25 +35,25 @@
 					<h3>Popular <span>Items</span></h3>
 					<div class="footer-copy-grids">
 						<div class="col-xs-4 footer-copy-grid1">
-							<a href="single.html"><img src="images/1.jpg" alt=" " class="img-responsive" /></a>
+							<a href="cake.php"><img src="images/1.jpg" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="col-xs-4 footer-copy-grid1">
-							<a href="single.html"><img src="images/2.jpg" alt=" " class="img-responsive" /></a>
+							<a href="bread.php"><img src="images/2.jpg" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="col-xs-4 footer-copy-grid1">
-							<a href="single.html"><img src="images/3.jpg" alt=" " class="img-responsive" /></a>
+							<a href="pastries.php"><img src="images/3.jpg" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="footer-copy-grids">
 						<div class="col-xs-4 footer-copy-grid1">
-							<a href="single.html"><img src="images/4.jpg" alt=" " class="img-responsive" /></a>
+							<a href="cookies.php"><img src="images/4.jpg" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="col-xs-4 footer-copy-grid1">
-							<a href="single.html"><img src="images/5.jpg" alt=" " class="img-responsive" /></a>
+							<a href="specialoffers.php"><img src="images/5.jpg" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="col-xs-4 footer-copy-grid1">
-							<a href="single.html"><img src="images/2.jpg" alt=" " class="img-responsive" /></a>
+							<a href="bread.php"><img src="images/2.jpg" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -62,9 +62,10 @@
 					<h3>Navigation</h3>
 					<ul>
 						<li><a href="mail.php">Mail Us</a></li>
-						<li><a href="blog.html">Order</a></li>
+						<li><a href="#">Order</a></li>
 						<li><a href="about.php">About Us</a></li>
-						<li><a href="short-codes.html">Sketch</a></li>
+						<li><a href="specialoffers.php">Special Offers</a></li>
+						<li><a href="products.php">Products</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
