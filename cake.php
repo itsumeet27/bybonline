@@ -197,7 +197,7 @@
 			<div class="col-md-4">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake2.jpg" alt="">
+				        <img class="img-responsive" src="images/cake1.png" alt="">
 			            <div class="overlay">
 			                <h2>Cake</h2>
 							<table class="table">
@@ -271,7 +271,7 @@
 			<div class="col-md-4">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake2.jpg" alt="">
+				        <img class="img-responsive" src="images/cake3.jpg" alt="">
 			            <div class="overlay">
 			                <h2>Cake</h2>						
 							<table class="table">
@@ -311,7 +311,7 @@
 			<div class="col-md-4">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake2.jpg" alt="">
+				        <img class="img-responsive" src="images/cake4.jpg" alt="">
 			            <div class="overlay">
 			                <h2>Cake</h2>
 							<table class="table">
@@ -348,7 +348,7 @@
 			<div class="col-md-4">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake2.jpg" alt="">
+				        <img class="img-responsive" src="images/cake5.jpg" alt="">
 			            <div class="overlay">
 			                <h2>Cake</h2>
 							<table class="table">
@@ -385,7 +385,7 @@
 			<div class="col-md-4">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake2.jpg" alt="">
+				        <img class="img-responsive" src="images/cake6.jpg" alt="">
 			            <div class="overlay">
 			                <h2>Cake</h2>						
 							<table class="table">
