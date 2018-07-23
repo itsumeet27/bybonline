@@ -106,7 +106,7 @@
 					margin: 10%;
 				}
 
-				.col-md-2 input[type='submit'], .col-md-2 input[type='reset']{
+				.col-md-3 input[type='submit'], .col-md-3 input[type='reset']{
 					padding: 8px 15px;
 					color: #555;
 					margin-top: 0.5em;
@@ -116,14 +116,14 @@
 					width: 100%;
 				}
 
-				.col-md-2 input[type='submit']:hover, .col-md-2 input[type='reset']:hover{
+				.col-md-3 input[type='submit']:hover, .col-md-3 input[type='reset']:hover{
 					color: #fff;
 					background-color: #555;
 					border: 1px solid #fff;
 					transition-duration: 0.3s;
 				}
 
-				#filters .col-md-2 label{
+				#filters .col-md-3 label{
 					font-size: 16px;
 					font-family: Raleway;
 				}
