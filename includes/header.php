@@ -56,7 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<nav>
 						  <ul>
 							<li>
-								<a href="index.html"><i class="glyphicon glyphicon-home" aria-hidden="true"></i><span>Home</span></a>
+								<a href="index.php"><i class="glyphicon glyphicon-home" aria-hidden="true"></i><span>Home</span></a>
 							</li>
 							<li class="active">
 								<a href="about.php"><i class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></i><span>About</span></a>
@@ -80,7 +80,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"> </div>
 				</div>
 				<div class="logo animated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-					<h1><a href="index.html"><span>family friendly</span>Bake Your Bread</a></h1>
+					<h1><a href="index.php"><span>family friendly</span>Bake Your Bread</a></h1>
 				</div>
 				<div class="social-icons animated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
 					<ul>
