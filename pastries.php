@@ -59,7 +59,7 @@
 			position: relative;
 			font-size: 17px;
 			background-color: transparent;
-			color: #FFF;
+			color: #555;
 			padding: 1em 0;
 			opacity: 0;
 			filter: alpha(opacity=0);
@@ -88,11 +88,11 @@
 			}
 
 			.table td, .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
-				  	padding: 8.5px!important;
+				  	padding: 9px!important;
 				}
 				.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
 				  	font-size: 0.85em;
-				  	color: #f9f9f9;
+				  	color: #333;
 				  	border-top: none !important;
 				  	font-family: Raleway;
 				}
@@ -106,42 +106,46 @@
 					margin: 10%;
 				}
 
-				.buy a{
-					padding: 15px 27px;
-					font-size: 18px;
-					font-family: Raleway;
-					color: #fff;
-					font-weight: bold;
-					background-color: #654321;
-					border: 1px solid #fff;
-				}
-
-				.buy a:hover{
-					color: #654321;
-					transition-duration: 0.4s;
-					background-color: #fff;
-					border: 1px solid #654321;
-				}
-
 				.col-md-2 input[type='submit'], .col-md-2 input[type='reset']{
-					padding: 7px 15px;
-					color: #fff;
+					padding: 8px 15px;
+					color: #555;
+					margin-top: 0.5em;
 					font-size: 16px;
-					background-color: #555;
-					border: 1px solid #fff;
+					background-color: #fff;
+					border: 1px solid #555;
 					width: 100%;
 				}
 
 				.col-md-2 input[type='submit']:hover, .col-md-2 input[type='reset']:hover{
-					color: #555;
-					background-color: #fff;
-					border: 1px solid #555;
+					color: #fff;
+					background-color: #555;
+					border: 1px solid #fff;
 					transition-duration: 0.3s;
 				}
 
 				#filters .col-md-2 label{
 					font-size: 16px;
 					font-family: Raleway;
+				}
+
+				.row .container{
+					
+					padding: 3.5%;
+					width: 90%;
+				}
+
+				.row{
+					background: rgb(255,255,255); /* Old browsers */
+					background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					
+				}
+
+				.col-md-4 .overlay{
+					box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+					background-color: rgba(255,255,255,0.75);
+					padding: 3.5%;
 				}
 	        </style> 
 	        <script type="text/javascript">
@@ -211,7 +215,7 @@
 									<td>Value</td>
 								</tr>
 							</table>
-							<a href="#">Add to Cart</a>
+							<a href="#" style="color: #444;font-weight: bold;">Add to Cart</a>
 			            </div>
 				    </div>
 				</div>
@@ -236,7 +240,7 @@
 									<td>Value</td>
 								</tr>
 							</table>
-							<a href="#">Add to Cart</a>
+							<a href="#" style="color: #444;font-weight: bold;">Add to Cart</a>
 			            </div>
 				    </div>
 				</div>
@@ -261,7 +265,7 @@
 									<td>Value</td>
 								</tr>
 							</table>
-							<a href="#">Add to Cart</a>						
+							<a href="#" style="color: #444;font-weight: bold;">Add to Cart</a>						
 			            </div>			     
 				    </div>
 				</div>
@@ -289,7 +293,7 @@
 									<td>Value</td>
 								</tr>
 							</table>
-							<a href="#">Add to Cart</a>
+							<a href="#" style="color: #444;font-weight: bold;">Add to Cart</a>
 			            </div>
 				    </div>
 				</div>
@@ -314,7 +318,7 @@
 									<td>Value</td>
 								</tr>
 							</table>
-							<a href="#">Add to Cart</a>
+							<a href="#" style="color: #444;font-weight: bold;">Add to Cart</a>
 			            </div>
 				    </div>
 				</div>
@@ -339,7 +343,7 @@
 									<td>Value</td>
 								</tr>
 							</table>
-							<a href="#">Add to Cart</a>						
+							<a href="#" style="color: #444;font-weight: bold;">Add to Cart</a>						
 			            </div>			     
 				    </div>
 				</div>
@@ -367,7 +371,7 @@
 									<td>Value</td>
 								</tr>
 							</table>
-							<a href="#">Add to Cart</a>
+							<a href="#" style="color: #444;font-weight: bold;">Add to Cart</a>
 			            </div>
 				    </div>
 				</div>
@@ -392,7 +396,7 @@
 									<td>Value</td>
 								</tr>
 							</table>
-							<a href="#">Add to Cart</a>
+							<a href="#" style="color: #444;font-weight: bold;">Add to Cart</a>
 			            </div>
 				    </div>
 				</div>
@@ -417,7 +421,7 @@
 									<td>Value</td>
 								</tr>
 							</table>
-							<a href="#">Add to Cart</a>						
+							<a href="#" style="color: #444;font-weight: bold;">Add to Cart</a>						
 			            </div>			     
 				    </div>
 				</div>
