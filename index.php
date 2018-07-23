@@ -1,7 +1,6 @@
 <?php
     include('includes/header.php');
 ?>
-
 <head>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

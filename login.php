@@ -14,7 +14,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Bake Your Bread Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" /> <!-- Flexslider-CSS -->
 <link href="css/font-awesome.css" rel="stylesheet"><!-- Font-awesome-CSS --> 
-<link href="css/style.css" rel='stylesheet' type='text/css'/><!-- Stylesheet-CSS -->
+<link href="css/login.css" rel='stylesheet' type='text/css'/><!-- Stylesheet-CSS -->
 <link href="//fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>	
