@@ -5,7 +5,7 @@
 	<div class="banner-bottom animated wow lightSpeedIn" data-wow-duration="1500ms" data-wow-delay="800ms">
 		<ul id="flexiselDemo1">	
 			<li>
-				<a href="single.html"><div class="item item-sub">
+				<a href="cake.php"><div class="item item-sub">
 					<div class="item1">
 						<i class="glyphicon glyphicon-cutlery" aria-hidden="true"></i>
 						<h3>Cake</h3>
@@ -18,7 +18,7 @@
 				</div></a>
 			</li>
 			<li>
-				<a href="single.html"><div class="item item-sub1">
+				<a href="bread.php"><div class="item item-sub1">
 					<div class="item1">
 						<i class="glyphicon glyphicon-cutlery" aria-hidden="true"></i>
 						<h3>Bread</h3>
@@ -30,7 +30,7 @@
 				</div></a>
 			</li>
 			<li>
-				<a href="single.html"><div class="item item-sub2">
+				<a href="cookies.php"><div class="item item-sub2">
 					<div class="item1">
 						<i class="glyphicon glyphicon-cutlery" aria-hidden="true"></i>
 						<h3>Cookies</h3>
@@ -42,7 +42,7 @@
 				</div></a>
 			</li>
 			<li>
-				<a href="single.html"><div class="item item-sub3">
+				<a href="pastries.php"><div class="item item-sub3">
 					<div class="item1">
 						<i class="glyphicon glyphicon-cutlery" aria-hidden="true"></i>
 						<h3>Pastries</h3>
