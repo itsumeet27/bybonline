@@ -270,6 +270,7 @@
 		<div class="clearfix"> </div>
 	</div>
 <!-- //banner-bottom-grids -->
+	<br>
 <?php 
 	include('includes/footer.php');
 ?>
