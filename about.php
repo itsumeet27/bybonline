@@ -2,6 +2,15 @@
 	include("includes/header.php")
 ?>
 <!-- about -->
+<head>
+	<style type="text/css">
+		html, body{
+        		width: 100%;
+  				overflow-x: hidden;
+			}
+	</style>
+</head>
+
 	<div class="about">
 		<div class="container">
 			<div class="about-grids">

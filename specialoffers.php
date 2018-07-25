@@ -2,7 +2,13 @@
 include('includes/header.php');
 
 ?>
-<head>       
+<head>  
+	<style type="text/css">
+		html, body{
+        		width: 100%;
+  				overflow-x: hidden;
+			}
+	</style>     
 <!-- //for-mobile-apps -->
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" type="text/css" href="css/custom.css">

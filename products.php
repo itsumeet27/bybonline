@@ -3,6 +3,12 @@
 ?>
 
 <head>
+	<style type="text/css">
+		html, body{
+        		width: 100%;
+  				overflow-x: hidden;
+			}
+	</style>
 	<!-- Custom CSS -->
         <link href="css/custom.css" rel="stylesheet">  
 </head>

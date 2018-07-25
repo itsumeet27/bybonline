@@ -2,6 +2,15 @@
 	include("includes/header.php")
 ?>
 <!-- mail -->
+
+<head>
+	<style type="text/css">
+		html, body{
+        		width: 100%;
+  				overflow-x: hidden;
+			}
+	</style>
+</head>
 	<div class="mail">
 		<div class="container">
 		<h2 class="animated wow flipInX" data-wow-duration="1200ms" data-wow-delay="500ms"><span>Get In Touch</span> With US</h2>

@@ -2,6 +2,13 @@
     include('includes/header.php');
 ?>
 <head>
+
+	<style type="text/css">
+		html, body{
+        		width: 100%;
+  				overflow-x: hidden;
+			}
+	</style>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -270,7 +277,7 @@
 		<div class="clearfix"> </div>
 	</div>
 <!-- //banner-bottom-grids -->
-	<br>
+<br>
 <?php 
 	include('includes/footer.php');
 ?>
