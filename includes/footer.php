@@ -61,11 +61,11 @@
 				<div class="col-md-3 footer-copy-grid">
 					<h3>Navigation</h3>
 					<ul>
-						<li><a href="mail.php">Mail Us</a></li>
-						<li><a href="#">Order</a></li>
+						<li><a href="index.php">Home</a></li>						
 						<li><a href="about.php">About Us</a></li>
-						<li><a href="specialoffers.php">Special Offers</a></li>
-						<li><a href="products.php">Products</a></li>
+						<li><a href="#">Order</a></li>
+						<li><a href="specialoffers.php">Cake saloon</a></li>
+						<li><a href="products.php">Sign in</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>

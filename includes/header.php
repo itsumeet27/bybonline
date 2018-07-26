@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	.header-right nav {
 		position: absolute;
 	    top: -23%;
-	    left: 15.409% !important;
+	    left: 27.1% !important;
 	    color: #999;
 	    z-index: -1;
 	}
@@ -92,16 +92,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<a href="about.php"><i class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></i><span>About</span></a>
 							</li>
 							<li>
-								<a href="specialoffers.php"><i class="glyphicon glyphicon-text-size" aria-hidden="true"></i><span>Special Offers</span></a>
+								<a href="specialoffers.php"><i class="glyphicon glyphicon-text-size" aria-hidden="true"></i><span>Cake saloon</span></a>
 							</li>
 							<li>
-								<a href="login.php"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i><span>Login</span></a>
-							</li>
-							<li>
-								<a href="register.php"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i><span>Register</span></a>
-							</li>
-							<li>
-								<a href="mail.php"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><span>Mail Us</span></a>
+								<a href="login.php"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i><span>Sign in</span></a>
 							</li>
 						  </ul>
 						</nav>
