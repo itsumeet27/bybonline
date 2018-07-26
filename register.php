@@ -21,7 +21,45 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--Google Fonts-->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <script src="js/jquery-1.11.1.min.js"></script>
+
+<style type="text/css">
+
+	h1 {
+	    font-size: 2em;
+	    color: #555;
+	    text-align: center;
+	    font-weight: 750;
+	    text-transform: uppercase;
+	    text-shadow: 3px 2px 3px white;
+	}
+
+	.content-info {
+	    padding: 1.2em 2em;
+	    text-align: center;
+	}
+
+	.w3layouts-banner-info h3{
+	    color: #212121;
+	    font-size: 1em;
+	    margin: 0;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    letter-spacing: 1px;
+	    font-family: 'Raleway', sans-serif;
+	}
+
+	.w3layouts-banner-info p{
+		color:#777;
+		margin:1em 0 0 0;
+		font-size:.9em;
+		line-height:1.8em;
+		text-align: justify;
+	}
+</style>
+
 </head>
 <body>
 <div class="wthree-dot">
@@ -39,12 +77,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<div class="w3layouts-banner-info">
 											<h3>Bake Your Bread</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et placerat leo, non condimentum justo</p>
-										</div>
-									</li>
-									<li>
-										<div class="w3layouts-banner-info">
-											<h3>Why Us?</h3>
-											<p>By creating an account at Bake Your Bread you will be able to sketch cake of your own design and able to submit, access each page of a site, keep track of the orders you have previously made and many more.</p>
 										</div>
 									</li>
 								</ul>
