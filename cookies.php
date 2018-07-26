@@ -50,6 +50,8 @@
 			position: relative;
 			-webkit-transition: all 0.35s;
 			transition: all 0.35s;
+			width: 100%;
+			height: 100%;
 			}
 
 			.hovereffect:hover img {
@@ -352,14 +354,61 @@ x
 					box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
 					background-color: rgba(255,255,255,0.75);
 					padding: 3.5%;
-				}
-	        </style> 
-	        <script type="text/javascript">
-	        	function show_value(x)
-				{
-				 	document.getElementById("slider_value").innerHTML=x;
-				}
-	        </script>
+				}#filters{
+				display: none;
+			}
+
+			#filterbtn{
+				padding: 10px 15px;
+				text-decoration: none;
+				background-color: #f9f9f9;
+				border-radius: 3.5px;
+				color: #444;
+				width: 150px;
+			}
+
+			#filterbtn:hover{
+				cursor: pointer;
+				background-color: #444;
+				color: #f7f7f7;
+				transition-duration: 0.4s;
+			}
+
+			#filters .col-lg-2{
+				padding: 0.75%;
+			}
+
+			#filters .col-md-4{
+				padding: 1%;
+			}
+
+			#filters .col-sm-6{
+				padding: 1%;
+			}
+
+			#filters .col-xs-12{
+				padding: 1%;
+			}
+
+			.filter-title{
+				font-size: 18px;
+				font-weight: bold;
+			}
+
+        </style> 
+        <script type="text/javascript">
+        	function show_value(x)
+			{
+			 	document.getElementById("slider_value").innerHTML=x;
+			}
+        </script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+        		$("#filterbtn").click(function(){
+        			$("#filters").slideToggle("slow");
+        		});
+        	});
+        </script>
 </head>
 
 	<hr>
@@ -367,17 +416,19 @@ x
 	<hr>
 	<div class="row">
 		<div class="container">
+			<center><div id="filterbtn">Filters</div></center>
+			<br>
 			<div id="filters">
-				<div class="col-md-3 col-md-6 col-sm-12">
-					<h3>Filters: </h3>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<h3>Apply filters: </h3>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
-					<label>Price range: </label><br>
+					<p class="filter-title">Price range: </p><br>
 					<span id="slider_value" style="color:black;text-align: center">0</span>
 					<input width="400" type="range" min="299" max="1499" name="sld3" value="749" onchange="show_value(this.value);">2499
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
-					<label>Weight: </label><br>
+					<p class="filter-title">Weight: </p><br>
 					<input type="checkbox" name="weight" value="0.5">&nbsp;0.5 kg <br>
 					<input type="checkbox" name="weight" value="1">&nbsp;1 kg <br>
 					<input type="checkbox" name="weight" value="2">&nbsp;2 kg <br>

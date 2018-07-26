@@ -3,17 +3,19 @@
 ?>
 <head>
 
-	<style type="text/css">
-		html, body{
-        		width: 100%;
-  				overflow-x: hidden;
-			}
-	</style>
+<style type="text/css">
+	html,body{
+		width: 100%;
+		overflow-x: hidden;
+	}
+</style>
+
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/custom.css" rel="stylesheet" type="text/css" />
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -44,11 +46,11 @@
 		
 		<div class="special-offers-section">
 			<div class="container">
-				<div class="special-offers-section-head text-center dotted-line">
-					<h4>Special Offers</h4>
+				<div class="special-offers-section-head text-center">
+					<hr><h4>Special Offers</h4><hr>
 				</div>
 				<div class="special-offers-section-grids">
-				 <div class="m_3"><span class="middle-dotted-line"> </span> </div>
+				 <!--<div class="m_3"><span class="middle-dotted-line"> </span> </div>-->
 				   <div class="container">
 					  <ul id="flexiselDemo2">
 						<li>
@@ -277,7 +279,6 @@
 		<div class="clearfix"> </div>
 	</div>
 <!-- //banner-bottom-grids -->
-<br>
 <?php 
 	include('includes/footer.php');
 ?>

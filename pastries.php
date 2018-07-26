@@ -50,6 +50,8 @@
 			position: relative;
 			-webkit-transition: all 0.35s;
 			transition: all 0.35s;
+			width: 100%;
+			height: 100%;
 			}
 
 			.hovereffect:hover img {
@@ -354,13 +356,61 @@ x
 					background-color: rgba(255,255,255,0.75);
 					padding: 3.5%;
 				}
-	        </style> 
-	        <script type="text/javascript">
-	        	function show_value(x)
-				{
-				 	document.getElementById("slider_value").innerHTML=x;
-				}
-	        </script>
+				#filters{
+				display: none;
+			}
+
+			#filterbtn{
+				padding: 10px 15px;
+				text-decoration: none;
+				background-color: #f9f9f9;
+				border-radius: 3.5px;
+				color: #444;
+				width: 150px;
+			}
+
+			#filterbtn:hover{
+				cursor: pointer;
+				background-color: #444;
+				color: #f7f7f7;
+				transition-duration: 0.4s;
+			}
+
+			#filters .col-lg-2{
+				padding: 0.75%;
+			}
+
+			#filters .col-md-4{
+				padding: 1%;
+			}
+
+			#filters .col-sm-6{
+				padding: 1%;
+			}
+
+			#filters .col-xs-12{
+				padding: 1%;
+			}
+
+			.filter-title{
+				font-size: 18px;
+				font-weight: bold;
+			}
+
+        </style> 
+        <script type="text/javascript">
+        	function show_value(x)
+			{
+			 	document.getElementById("slider_value").innerHTML=x;
+			}
+        </script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+        		$("#filterbtn").click(function(){
+        			$("#filters").slideToggle("slow");
+        		});
+        	});
+        </script>
 </head>
 
 	<hr>
@@ -368,30 +418,32 @@ x
 	<hr>
 	<div class="row">
 		<div class="container">
+			<center><div id="filterbtn">Filters</div></center>
+			<br>
 			<div id="filters">
 				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-					<h3>Filters: </h3>
+					<h3>Apply filters: </h3>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-					<label>Shape: </label><br>
+					<p class="filter-title">Shape: </p><br>
 					<input type="checkbox" name="shape" value="rectangle">&nbsp;Rectangle <br>
 					<input type="checkbox" name="shape" value="circle">&nbsp;Circle <br>
 					<input type="checkbox" name="shape" value="heart">&nbsp;Heart <br>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-					<label>Flavor: </label><br>
+					<p class="filter-title">Flavor: </p><br>
 					<input type="checkbox" name="flavor" value="blackforest">&nbsp;Black forest <br>
 					<input type="checkbox" name="flavor" value="pineapple">&nbsp;Pineapple <br>
 					<input type="checkbox" name="flavor" value="redvelvet">&nbsp;Red velvet <br>
 					<input type="checkbox" name="flavor" value="fruit">&nbsp;Fruit pastries <br>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-					<label>Price range: </label><br>
+					<p class="filter-title">Price range: </p><br>
 					<span id="slider_value" style="color:black;text-align: center">0</span>
 					<input width="400" type="range" min="0" max="499" name="sld3" value="199" onchange="show_value(this.value);">499
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-					<label>Veg: </label><br>
+					<p class="filter-title">Veg: </p><br>
 					<input type="radio" name="veg" value="yes">&nbsp;Yes <br>
 					<input type="radio" name="veg" value="no">&nbsp;No <br>
 				</div>
