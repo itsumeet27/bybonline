@@ -8,7 +8,7 @@
     	<style type="text/css">
     	html, body{
     		width: 100%;
-				overflow-x: hidden;
+			overflow-x: hidden;
 		}
 		
 		.hovereffect {
@@ -441,26 +441,26 @@ x
 					<h3>Apply filters: </h3>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-					<p class="filter-title">Shape: </b><br>
+					<p class="filter-title">Shape: </p><br>
 					<input type="checkbox" name="shape" value="rectangle">&nbsp;Rectangle <br>
 					<input type="checkbox" name="shape" value="square">&nbsp;Square <br>
 					<input type="checkbox" name="shape" value="circle">&nbsp;Circle <br>
 					<input type="checkbox" name="shape" value="heart">&nbsp;Heart <br>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-					<p class="filter-title">Flavor: </b><br>
+					<p class="filter-title">Flavor: </p><br>
 					<input type="checkbox" name="flavor" value="blackforest">&nbsp;Black forest <br>
 					<input type="checkbox" name="flavor" value="pineapple">&nbsp;Pineapple <br>
 					<input type="checkbox" name="flavor" value="redvelvet">&nbsp;Red velvet <br>
 					<input type="checkbox" name="flavor" value="fruit">&nbsp;Fruit cake <br>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-					<p class="filter-title">Price range: </b><br>
+					<p class="filter-title">Price range: </p><br>
 					<span id="slider_value" style="color:#000;text-align: center">0</span>
 					<input width="400" type="range" min="0" max="1499" name="sld3" value="499" onchange="show_value(this.value);">1499
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-					<p class="filter-title">Weight: </b><br>
+					<p class="filter-title">Weight: </p><br>
 					<input type="checkbox" name="weight" value="0.5">&nbsp;0.5 kg <br>
 					<input type="checkbox" name="weight" value="1">&nbsp;1 kg <br>
 					<input type="checkbox" name="weight" value="2">&nbsp;2 kg <br>
@@ -476,7 +476,7 @@ x
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake1.png" alt="" style="padding: 5%;">
+				        <img class="img-responsive" src="images/cake/cake1.png" alt="" style="padding: 5%;">
 			            <div class="overlay">
 			                <h2>Cake</h2>
 							<table class="table">
@@ -513,7 +513,7 @@ x
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake2.jpg" alt="" style="padding: 5%;">
+				        <img class="img-responsive" src="images/cake/cake2.jpg" alt="" style="padding: 5%;">
 			            <div class="overlay">
 			                <h2>Cake</h2>
 							<table class="table">
@@ -550,7 +550,7 @@ x
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake3.jpg" alt="" style="padding: 5%;">
+				        <img class="img-responsive" src="images/cake/cake3.jpg" alt="" style="padding: 5%;">
 			            <div class="overlay">
 			                <h2>Cake</h2>						
 							<table class="table">
@@ -587,7 +587,7 @@ x
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake2.jpg" alt="" style="padding: 5%;">
+				        <img class="img-responsive" src="images/cake/cake2.jpg" alt="" style="padding: 5%;">
 			            <div class="overlay">
 			                <h2>Cake</h2>
 							<table class="table">
@@ -624,7 +624,7 @@ x
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake1.png" alt="" style="padding: 5%;">
+				        <img class="img-responsive" src="images/cake/cake1.png" alt="" style="padding: 5%;">
 			            <div class="overlay">
 			                <h2>Cake</h2>
 							<table class="table">
@@ -661,7 +661,7 @@ x
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake3.jpg" alt="" style="padding: 5%;">
+				        <img class="img-responsive" src="images/cake/cake3.jpg" alt="" style="padding: 5%;">
 			            <div class="overlay">
 			                <h2>Cake</h2>						
 							<table class="table">
@@ -698,7 +698,7 @@ x
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake1.png" alt="" style="padding: 5%;">
+				        <img class="img-responsive" src="images/cake/cake1.png" alt="" style="padding: 5%;">
 			            <div class="overlay">
 			                <h2>Cake</h2>
 							<table class="table">
@@ -735,7 +735,7 @@ x
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake2.jpg" alt="" style="padding: 5%;">
+				        <img class="img-responsive" src="images/cake/cake2.jpg" alt="" style="padding: 5%;">
 			            <div class="overlay">
 			                <h2>Cake</h2>
 							<table class="table">
@@ -772,7 +772,7 @@ x
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div width="300">
 				    <div class="hovereffect">
-				        <img class="img-responsive" src="images/cake3.jpg" alt="" style="padding: 5%;">
+				        <img class="img-responsive" src="images/cake/cake3.jpg" alt="" style="padding: 5%;">
 			            <div class="overlay">
 			                <h2>Cake</h2>						
 							<table class="table">
