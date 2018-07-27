@@ -277,7 +277,7 @@
 				our labour, our skill and preparation</p>
 		</div>
 		<div class="clearfix"> </div>
-	</div>
+	</div><br>
 <!-- //banner-bottom-grids -->
 <?php 
 	include('includes/footer.php');
