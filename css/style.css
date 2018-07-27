@@ -192,7 +192,7 @@ body a:hover{
 .header-right nav {
   position: absolute;
     top: -23%;
-    left: 15.409% !important;
+    left: 24%;
     color: #999;
     z-index: -1;
 }
@@ -261,8 +261,8 @@ body a:hover{
   text-shadow: 0px 0px #D5963A, 1px 1px #D5963A, 2px 2px #D5963A, 3px 3px #D5963A, 4px 4px #D5963A, 5px 5px #D5963A, 6px 6px #D5963A, 7px 7px #D5963A, 8px 8px #D5963A, 9px 9px #D5963A, 10px 10px #D5963A, 11px 11px #D5963A, 12px 12px #D5963A, 13px 13px #D5963A, 14px 14px #D5963A, 15px 15px #D5963A, 16px 16px #D5963A, 17px 17px #D5963A, 18px 18px #D5963A, 19px 19px #D5963A, 20px 20px #D5963A, 21px 21px #D5963A, 22px 22px #D5963A, 23px 23px #D5963A, 24px 24px #D5963A, 25px 25px #D5963A, 26px 26px #D5963A, 27px 27px #D5963A, 28px 28px #D5963A, 29px 29px #D5963A, 30px 30px #D5963A, 31px 31px #D5963A, 32px 32px #D5963A, 33px 33px #D5963A, 34px 34px #D5963A, 35px 35px #D5963A, 36px 36px #D5963A, 37px 37px #D5963A, 38px 38px #D5963A, 39px 39px #D5963A, 40px 40px #D5963A, 41px 41px #D5963A, 42px 42px #D5963A, 43px 43px #D5963A, 44px 44px #D5963A, 45px 45px #D5963A, 46px 46px #D5963A, 47px 47px #D5963A, 48px 48px #D5963A, 49px 49px #D5963A, 50px 50px #D5963A, 51px 51px #D5963A, 52px 52px #D5963A, 53px 53px #D5963A, 54px 54px #D5963A, 55px 55px #D5963A, 56px 56px #D5963A, 57px 57px #D5963A, 58px 58px #D5963A, 59px 59px #D5963A, 60px 60px #D5963A;
 }
 .header-right nav ul li.active i {
-  background:#F3AD45;
-  text-shadow: 0px 0px #D5963A, 1px 1px #D5963A, 2px 2px #D5963A, 3px 3px #D5963A, 4px 4px #D5963A, 5px 5px #D5963A, 6px 6px #D5963A, 7px 7px #D5963A, 8px 8px #D5963A, 9px 9px #D5963A, 10px 10px #D5963A, 11px 11px #D5963A, 12px 12px #D5963A, 13px 13px #D5963A, 14px 14px #D5963A, 15px 15px #D5963A, 16px 16px #D5963A, 17px 17px #D5963A, 18px 18px #D5963A, 19px 19px #D5963A, 20px 20px #D5963A, 21px 21px #D5963A, 22px 22px #D5963A, 23px 23px #D5963A, 24px 24px #D5963A, 25px 25px #D5963A, 26px 26px #D5963A, 27px 27px #D5963A, 28px 28px #D5963A, 29px 29px #D5963A, 30px 30px #D5963A, 31px 31px #D5963A, 32px 32px #D5963A, 33px 33px #D5963A, 34px 34px #D5963A, 35px 35px #D5963A, 36px 36px #D5963A, 37px 37px #D5963A, 38px 38px #D5963A, 39px 39px #D5963A, 40px 40px #D5963A, 41px 41px #D5963A, 42px 42px #D5963A, 43px 43px #D5963A, 44px 44px #D5963A, 45px 45px #D5963A, 46px 46px #D5963A, 47px 47px #D5963A, 48px 48px #D5963A, 49px 49px #D5963A, 50px 50px #D5963A, 51px 51px #D5963A, 52px 52px #D5963A, 53px 53px #D5963A, 54px 54px #D5963A, 55px 55px #D5963A, 56px 56px #D5963A, 57px 57px #D5963A, 58px 58px #D5963A, 59px 59px #D5963A, 60px 60px #D5963A;
+  background:#454445;
+  text-shadow: 0px 0px #525252, 1px 1px #525252, 2px 2px #525252, 3px 3px #525252, 4px 4px #525252, 5px 5px #525252, 6px 6px #525252, 7px 7px #525252, 8px 8px #525252, 9px 9px #525252, 10px 10px #525252, 11px 11px #525252, 12px 12px #525252, 13px 13px #525252, 14px 14px #525252, 15px 15px #525252, 16px 16px #525252, 17px 17px #525252, 18px 18px #525252, 19px 19px #525252, 20px 20px #525252, 21px 21px #525252, 22px 22px #525252, 23px 23px #525252, 24px 24px #525252, 25px 25px #525252, 26px 26px #525252, 27px 27px #525252, 28px 28px #525252, 29px 29px #525252, 30px 30px #525252, 31px 31px #525252, 32px 32px #525252, 33px 33px #525252, 34px 34px #525252, 35px 35px #525252, 36px 36px #525252, 37px 37px #525252, 38px 38px #525252, 39px 39px #525252, 40px 40px #525252, 41px 41px #525252, 42px 42px #525252, 43px 43px #525252, 44px 44px #525252, 45px 45px #525252, 46px 46px #525252, 47px 47px #525252, 48px 48px #525252, 49px 49px #525252, 50px 50px #525252, 51px 51px #525252, 52px 52px #525252, 53px 53px #525252, 54px 54px #525252, 55px 55px #525252, 56px 56px #525252, 57px 57px #525252, 58px 58px #525252, 59px 59px #525252, 60px 60px #525252;
 }
 .header-right nav ul li.active a{
   color:#F3AD45;
@@ -1628,6 +1628,7 @@ ul.paging{
     top: 1%;
   }
 }
+
 @media (max-width:1280px){
   .header {
     padding: 3em 0 10em;
@@ -1637,6 +1638,37 @@ ul.paging{
   }
   .header-right nav {
     top: -28%;
+  }
+  .header-right1 nav {
+    top: -31% !important;
+  }
+  .item1 h3 {
+    font-size: 2.5em;
+    margin: 3.5em 0 0em;
+  }
+  .banner-bottom-grid-left {
+    padding: 3em 0 0 5em;
+  }
+  .banner-bottom-grid-sub1 {
+    width: 100%;
+    top: 0%;
+  }
+  .banner-bottom-grid-left1 p:before {
+    left: 2%;
+  }
+}
+@media (max-width:1199px){
+  .header {
+    padding: 3em 0 10em;
+  }
+  .banner {
+    min-height: 610px;
+  }
+  .header-right nav {
+    top: -27%;
+  }
+  .header-right1 nav {
+    top: -27% !important;
   }
   .item1 h3 {
     font-size: 2.5em;
@@ -1706,7 +1738,8 @@ ul.paging{
     min-height: 390px;
   }
   .header-right1 nav {
-    top: -36% !important;
+    top: -31% !important;
+    margin-left: -4%;
   }
   .about, .team, .typo, .mail, .blog {
     padding: 4em 0;
@@ -1756,23 +1789,6 @@ ul.paging{
   .banner-bottom-grid-sub-pos h3 {
     font-size: 2em;
   }
-  .header-right nav {
-    left: 1%;
-    margin-top: 50px;
-  }
-  .header-right nav ul li a span {
-    font-size: 1.3em;   
-
-  }
-  .header-right nav ul li i {
-    font-size: 1em;
-  }
-  .header-right nav {
-    top: -22%;
-  }
-  .container.banner-drop.nav-open {
-    margin-top: 5em;
-  }
 }
 @media (max-width:991px){
   .header-left {
@@ -1783,6 +1799,10 @@ ul.paging{
   }
   .header-right nav {
     left: 8%;
+  }
+
+   .header-right1 nav {
+    margin-left: -8%;
   }
   .item-sub3, .item-sub, .item-sub1, .item-sub2 {
     min-height: 255px;
@@ -1915,7 +1935,8 @@ ul.paging{
     top: -30%;
   }
   .header-right1 nav {
-    top: -38% !important;
+    top: -34% !important;
+    margin-left: -14%;
   }
   .team-grid {
     width: 70%;
@@ -1925,19 +1946,8 @@ ul.paging{
   .logo h1 a {
     font-size: 2em;
   }
-  .header-right nav ul li {
-    margin: 0em 1em;
-  }
-  .header-right nav {
-    left: 6%;
-    top: -29%;
-  }
-  .container.banner-drop.nav-open {
-    margin-top: 9em;
-  }
-  .header-right1 nav {
-    top: -41% !important;
-    margin:20px 0 0 -10%;
+  .header-right nav ul li a span {
+    font-size: 1em;
   }
   .banner-bottom-grid-left {
     padding: 2em 0 3em 3em;
@@ -2040,7 +2050,7 @@ ul.paging{
     font-size: 1.5em;
   }
   .header-right1 nav {
-    top: -41% !important;
+    top: -35% !important;
   }
   .comments-list ul {
     padding: 0em 0 2em;
@@ -2061,6 +2071,10 @@ ul.paging{
   }
   .header-right nav {
     left: 10%;
+  }
+   .header-right1 nav {
+    top: -34% !important;
+    margin-left: -13%;
   }
 }
 @media (max-width:568px){
@@ -2084,11 +2098,11 @@ ul.paging{
     top: -29%;
   }
   .container.banner-drop.nav-open {
-    margin-top: 9em;
+    margin-top: 6em;
   }
   .header-right1 nav {
-    top: -41% !important;
-    margin-left: -16%;
+    top: -25% !important;
+    margin-left: -13%;
   }
 }
 @media (max-width:480px){
@@ -2114,6 +2128,11 @@ ul.paging{
     left: 13%;
     top: -24%;
   }
+  .header-right1 nav {
+
+    top: -27% !important;
+    margin-left: -5%;
+}
   .logo h1 a {
     font-size: 1.2em;
   }
@@ -2218,13 +2237,13 @@ ul.paging{
 }
 @media (max-width: 414px){
   .header-right nav {
-    left: 1%;
-    margin-top:-15px;
+    left: 8%;
   }
-  .header-right nav ul li a span {
-    font-size: 18px;   
-
-  }
+    .header-right1 nav {
+    
+    top: -25% !important;
+    margin-left: -8%;
+}
   .banner-bottom-grid-left {
     padding: 2em 0 2em 1em;
   }
@@ -2301,20 +2320,14 @@ ul.paging{
     left: 0;
     width: 100%;
   }
+  .header-right1 nav {
+    top: -24% !important;
+    margin-left: -27%;
+}
 }
 @media (max-width:375px){
   .banner-bottom-grid-sub-pos h3 {
     font-size: 1.8em;
-  }
-  .header-right nav ul li a span {
-    font-size: 15px;   
-
-  }
-  .header-right nav ul li i {
-    font-size: .8em;
-  }
-  .header-right nav {
-    margin-top: 10px;
   }
   .footer-top p {
     font-size: 13px;
@@ -2337,20 +2350,16 @@ ul.paging{
     font-size: 12px;
     margin-bottom: .5em;
   }
-  .header-right nav {
-    left: 1%;
-    margin-top:8px;
-  }
   .header-right nav ul li a span {
-    font-size: 8px;   
-
+    font-size: 14px;
   }
   .header-right nav ul li i {
-    font-size: .7em;
+    font-size: .8em;
   }
   .header-right nav {
     top: -22%;
   }
+
   .container.banner-drop.nav-open {
     margin-top: 5em;
   }
@@ -2397,7 +2406,7 @@ ul.paging{
     font-size: 1.2em;
   }
   .header-right1 nav {
-    top: -24% !important;
+    top: -19% !important;
   }
   .popular h3, .subscribe h3, .categories h3, .instagram h2, .tags h3 {
     font-size: 1.3em;
