@@ -67,6 +67,26 @@
 				width: 25%;
 			}
 
+			.checkbtn{
+				padding: 1em;
+			}
+
+			.checkbtn a{
+				padding: 8px 15px;
+				text-decoration: none;
+				border-radius: 2px;
+				background-color: #444;
+				color: #f4f4f4;
+				border: 1px solid #f4f4f4;
+			}
+
+			.checkbtn a:hover{
+				transition-duration: 0.4s;
+				color: #444;
+				background-color: #f4f4f4;
+				border: 1px solid #444;
+			}
+
         </style> 
 </head>
 
@@ -104,6 +124,9 @@
 	  					<div class="price">
 	  						<label>Total Price: &#8377;</label>350
 	  					</div>
+	  					<div class="checkbtn">
+	  						<a href="#">Proceed to Checkout</a>
+	  					</div>
 	  				<hr>
 			  	</div>
 			</div>
@@ -139,6 +162,9 @@
 	  					<div class="price">
 	  						<label>Total Price: &#8377;</label>350
 	  					</div>
+	  					<div class="checkbtn">
+	  						<a href="#">Proceed to Checkout</a>
+	  					</div>
 	  				<hr>
 			  	</div>
 			</div>
@@ -173,6 +199,9 @@
 	  					</div>
 	  					<div class="price">
 	  						<label>Total Price: &#8377;</label>350
+	  					</div>
+	  					<div class="checkbtn">
+	  						<a href="#">Proceed to Checkout</a>
 	  					</div>
 	  				<hr>
 			  	</div>
