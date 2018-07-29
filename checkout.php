@@ -1,211 +1,353 @@
 <?php
-    include('includes/header.php');
+include('includes/header.php');
+
 ?>
-
 <head>
-	<!-- Custom CSS -->
-        <link rel="stylesheet" type="text/css" href="css/custom.css">
-        <style type="text/css">
+
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<style type="text/css">
+
+.SuccessField {
+    border-color: #458845 !important;
+    -webkit-box-shadow: 0 0 7px #9acc9a !important;
+    -moz-box-shadow: 0 0 7px #9acc9a !important;
+    box-shadow: 0 0 7px #9acc9a !important;
+    background: #f9f9f9 url(../images/valid.png) no-repeat 98% center !important
+}
+
+.btn-xs{
+    line-height: 28px;
+}
+
+/*login form*/
+.login-container{
+    margin-top:30px ;
+}
+.login-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.login-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.login-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.login-container-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #357ebd;/*#4d90fe;*/
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.login-container-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.login-help{
+  font-size: 12px;
+}
+
+.asterix{
+    background:#f9f9f9 url(../images/red_asterisk.png) no-repeat 98% center !important;
+}
 
 
-        	html, body{
-        		width: 100%;
-  				overflow-x: hidden;
-			}
+/*
+ * BOOTSTRAP
+ */
+.container{
+    border: none;
+}
+.panel-footer{
+    background:#fff;
+}
+.btn{
+    border-radius: 1px;
+}
+.btn-sm, .btn-group-sm > .btn{
+    border-radius: 1px;
+}
+.input-sm, .form-horizontal .form-group-sm .form-control{
+    border-radius: 1px;
+}
 
-			.row{
-				width: 100%;
-				padding: 10%;
-				margin-right: 0px;
-				margin-left: 0px;
-			}
+.panel-info {
+    border-color: #999;
+}
 
+.panel-heading {
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+.panel {
+    border-radius: 1px;
+}
+.panel-info > .panel-heading {
+    color: #eee;
+    border-color: #999;
+}
+.panel-info > .panel-heading {
+    background-image: linear-gradient(to bottom, #555 0px, #888 100%);
+}
 
-			.container{
-				box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
-				width: 100%;
-				padding: 5%;
-				border-radius: 15px;
-			}
+hr {
+    border-color: #999 -moz-use-text-color -moz-use-text-color;
+}
 
-			.row{
-				background: rgb(255,255,255); /* Old browsers */
-				background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				
-			}
+.panel-footer {
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-top: 1px solid #999;
+}
 
-			.card-img{
-				padding: 1%;
-				background-color: #fff;
+.btn-link {
+    color: #888;
+}
 
-			}
+hr{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
-			.card-img img{
-				width: 100%;
-				padding: 5%;
-				vertical-align: middle;
-			}
+/** MEDIA QUERIES **/
+@media only screen and (max-width: 989px){
+    .span1{
+        margin-bottom: 15px;
+        clear:both;
+    }
+}
 
-			.card-head h3{
-				padding: 0.5em;
-			}
+@media only screen and (max-width: 764px){
+    .inverse-1{
+        float:right;
+    }
+}
 
-			.quantity, .price, .card-desc{
-				padding-left: 1em;
-				padding-bottom: 1em; 
-			}
+@media only screen and (max-width: 586px){
+    .cart-titles{
+        display:none;
+    }
+    .panel {
+        margin-bottom: 1px;
+    }
+}
 
-			.card-desc p{
-				text-align: justify;
-				padding-top: 2%;
-				font-size: 15px;
-			}
+.form-control {
+    border-radius: 1px;
+}
 
-			input[type='number']{
-				width: 5em;
-			}
-
-			input[type='number'], input[type='text']{
-				
-				width: 15em;
-				height: 2em;
-				padding: 0.5em;
-			}
-
-        </style> 
+@media only screen and (max-width: 486px){
+    .col-xss-12{
+        width:100%;
+    }
+    .cart-img-show{
+        display: none;
+    }
+    .btn-submit-fix{
+        width:100%;
+    }
+    
+}
+/*
+@media only screen and (max-width: 777px){
+    .container{
+        overflow-x: hidden;
+    }
+}*/
+</style>       
 </head>
+<body>
+<div class="container wrapper">
+            <hr>
+                <h1 align = "center" id="user-head">Checkout</h1>
+            <hr>  
+            <br> 
+            <div class="row cart-body">
+                <form class="form-horizontal" method="post" action="">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-push-6 col-sm-push-6">
+                    <!--REVIEW ORDER-->
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            Review Order <div class="pull-right"><small><a class="afix-1" href="#" style="color:#fff;">Edit Cart</a></small></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group" style="padding: 1em;margin: 0.35em;">
+                                <div class="form-group">
+                                    <div class="col-sm-3 col-xs-3">
+                                        <img class="img-responsive" src="images/cake/cake2.jpg" />
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="col-xs-12">Product name</div>
+                                        <div class="col-xs-12"><small>Quantity:<span>1</span></small></div>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-3 text-right">
+                                        <h4><span>$</span>25.00</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="padding: 1em;margin: 0.35em;">
+                                <div class="form-group">
+                                    <div class="col-sm-3 col-xs-3">
+                                        <img class="img-responsive" src="images/cake/cake5.jpg" />
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="col-xs-12">Product name</div>
+                                        <div class="col-xs-12"><small>Quantity:<span>1</span></small></div>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-3 text-right">
+                                        <h4><span>$</span>25.00</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="padding: 1em;margin: 0.35em;">
+                                <div class="form-group">
+                                    <div class="col-sm-3 col-xs-3">
+                                        <img class="img-responsive" src="images/cake/cake6.jpg" />
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="col-xs-12">Product name</div>
+                                        <div class="col-xs-12"><small>Quantity:<span>2</span></small></div>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-3 text-right">
+                                        <h4><span>$</span>50.00</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="padding: 1em;margin: 0.35em;">
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <strong>Subtotal</strong>
+                                        <div class="pull-right"><span>$</span><span>200.00</span></div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <small>Shipping</small>
+                                        <div class="pull-right"><span>-</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="padding: 1em;margin: 0.35em;"><hr />
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <strong>Order Total</strong>
+                                        <div class="pull-right"><span>$</span><span>150.00</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="padding-left: 1em;margin: 0.2em;">
+                                <div class="form-group">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <button type="submit" class="btn btn-primary btn-submit-fix">Place Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--REVIEW ORDER END-->
+                </div>
+                <br>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-pull-6 col-sm-pull-6">
+                    <!--SHIPPING METHOD-->
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Address</div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <h2 style="padding-bottom: 0.6em; padding-top: 0.6em;">Shipping Address</h2 style="padding: 1em;">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12"><strong>Country:</strong></div>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="country" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-6 col-xs-12">
+                                    <strong>First Name:</strong>
+                                    <input type="text" name="first_name" class="form-control" value="" />
+                                </div>
+                                <div class="span1"></div>
+                                <div class="col-md-6 col-xs-12">
+                                    <strong>Last Name:</strong>
+                                    <input type="text" name="last_name" class="form-control" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12"><strong>Address:</strong></div>
+                                <div class="col-md-12">
+                                    <input type="text" name="address" class="form-control" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12"><strong>City:</strong></div>
+                                <div class="col-md-12">
+                                    <input type="text" name="city" class="form-control" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12"><strong>State:</strong></div>
+                                <div class="col-md-12">
+                                    <input type="text" name="state" class="form-control" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12"><strong>Zip / Postal Code:</strong></div>
+                                <div class="col-md-12">
+                                    <input type="text" name="zip_code" class="form-control" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12"><strong>Phone Number:</strong></div>
+                                <div class="col-md-12"><input type="text" name="phone_number" class="form-control" value="" /></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12"><strong>Email Address:</strong></div>
+                                <div class="col-md-12"><input type="text" name="email_address" class="form-control" value="" /></div>
+                            </div>
+                        </div>
 
-	<hr>
-		<h1 align="center" id="user-head">Checkout</h1>
-	<hr>
-	<div class="row">
-		<div class="container">		
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-12 col-md-6">
-					<div class="card-img">
-						<img class="img-responsive" src="images/cake/cake2.jpg">
-					</div>
-				</div>	  			
-	  			<div class="col-8 col-md-6">
-	  				<hr>
-	  					<div class="card-head">
-	  						<h3 align="center">Product Name</h3>
-	  					</div>
-	  					<table class="table">
-	  						<tr>
-	  							<th>Quantity: </th>
-	  							<td>25</td>
-	  						</tr>
-	  						<tr>
-	  							<th>Address: </th>
-	  							<td><textarea placeholder="Enter your Address" cols="25" rows="5"></textarea></td>
-	  						</tr>
-	  						<tr>
-	  							<th>Pin code: </th>
-	  							<td><input type="number" name="pin" placeholder="401107" minlength="6" maxlength="6"></td>
-	  						</tr>
-	  						<tr>
-	  							<th>Cake Message: </th>
-	  							<td><input type="text" name="cakemsg" placeholder="Enter your message"></td>
-	  						</tr>
-	  						<tr>
-	  							<th>Location:</th>
-	  							<td>
-	  								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.149041081527!2d72.86094411447148!3d19.275883786973527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b05083d02857%3A0x9b4ccbda449809a8!2sSudarshan%2C+Sai+Mandir+Marg%2C+Sector+9%2C+Shanti+Nagar%2C+Mira+Road+East%2C+Mira+Bhayandar%2C+Maharashtra+401107!5e0!3m2!1sen!2sin!4v1532867570518" frameborder="0" style="border:0" allowfullscreen></iframe>
-	  							</td>
-	  						</tr>
-	  					</table>
-	  				<hr>
-			  	</div>
-			</div>
-		</div>
-		<br><br>
-		<div class="container">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-12 col-md-6">
-					<div class="card-img">
-						<img class="img-responsive" src="images/cake/cake6.jpg">
-					</div>
-				</div>	  			
-	  			<div class="col-8 col-md-6">
-	  				<hr>
-	  					<div class="card-head">
-	  						<h3 align="center">Product Name</h3>
-	  					</div>
-	  					<table class="table">
-	  						<tr>
-	  							<th>Quantity: </th>
-	  							<td>25</td>
-	  						</tr>
-	  						<tr>
-	  							<th>Address: </th>
-	  							<td><textarea placeholder="Enter your Address" cols="25" rows="5"></textarea></td>
-	  						</tr>
-	  						<tr>
-	  							<th>Pin code: </th>
-	  							<td><input type="number" name="pin" placeholder="401107" minlength="6" maxlength="6"></td>
-	  						</tr>
-	  						<tr>
-	  							<th>Cake Message: </th>
-	  							<td><input type="text" name="cakemsg" placeholder="Enter your message"></td>
-	  						</tr>
-	  						<tr>
-	  							<th>Location:</th>
-	  							<td>
-	  								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.149041081527!2d72.86094411447148!3d19.275883786973527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b05083d02857%3A0x9b4ccbda449809a8!2sSudarshan%2C+Sai+Mandir+Marg%2C+Sector+9%2C+Shanti+Nagar%2C+Mira+Road+East%2C+Mira+Bhayandar%2C+Maharashtra+401107!5e0!3m2!1sen!2sin!4v1532867570518" frameborder="0" style="border:0" allowfullscreen></iframe>
-	  							</td>
-	  						</tr>
-	  					</table>
-	  				<hr>
-			  	</div>
-			</div>
-		</div>
-		<br><br>
-		<div class="container">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-12 col-md-6">
-					<div class="card-img">
-						<img class="img-responsive" src="images/cake/cake5.jpg">
-					</div>
-				</div>	  			
-	  			<div class="col-8 col-md-6">
-	  				<hr>
-	  					<div class="card-head">
-	  						<h3 align="center">Product Name</h3>
-	  					</div>
-	  					<table class="table">
-	  						<tr>
-	  							<th>Quantity: </th>
-	  							<td>25</td>
-	  						</tr>
-	  						<tr>
-	  							<th>Address: </th>
-	  							<td><textarea placeholder="Enter your Address" cols="25" rows="5"></textarea></td>
-	  						</tr>
-	  						<tr>
-	  							<th>Pin code: </th>
-	  							<td><input type="number" name="pin" placeholder="401107" minlength="6" maxlength="6"></td>
-	  						</tr>
-	  						<tr>
-	  							<th>Cake Message: </th>
-	  							<td><input type="text" name="cakemsg" placeholder="Enter your message"></td>
-	  						</tr>
-	  						<tr>
-	  							<th>Location:</th>
-	  							<td>
-	  								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.149041081527!2d72.86094411447148!3d19.275883786973527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b05083d02857%3A0x9b4ccbda449809a8!2sSudarshan%2C+Sai+Mandir+Marg%2C+Sector+9%2C+Shanti+Nagar%2C+Mira+Road+East%2C+Mira+Bhayandar%2C+Maharashtra+401107!5e0!3m2!1sen!2sin!4v1532867570518" frameborder="0" style="border:0" allowfullscreen></iframe>
-	  							</td>
-	  						</tr>
-	  					</table>
-	  				<hr>
-			  	</div>
-			</div>
-		</div>
-	</div>
+                    </div>
+                    <!--SHIPPING METHOD END-->
+                
+                </div>
+                
+                </form>
+            </div>
+            <div class="row cart-footer">
+        
+            </div>
+    </div>
+
 <?php
-
-	include('includes/footer.php');
-
+include('includes/footer.php');
 ?>
