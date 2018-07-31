@@ -2321,7 +2321,7 @@ ul.paging{
     width: 100%;
   }
   .header-right1 nav {
-    top: -24% !important;
+    top: -27% !important;
     margin-left: -27%;
 }
 }
@@ -2351,7 +2351,7 @@ ul.paging{
     margin-bottom: .5em;
   }
   .header-right nav ul li a span {
-    font-size: 14px;
+    font-size: 13px;
   }
   .header-right nav ul li i {
     font-size: .8em;
@@ -2361,7 +2361,7 @@ ul.paging{
   }
 
   .container.banner-drop.nav-open {
-    margin-top: 5em;
+    margin-top: 6em;
   }
   .banner {
     background: url(../images/banner1.jpg) no-repeat -155px 0px;
@@ -2406,7 +2406,8 @@ ul.paging{
     font-size: 1.2em;
   }
   .header-right1 nav {
-    top: -19% !important;
+      top: -29% !important;
+    margin-left: -27%
   }
   .popular h3, .subscribe h3, .categories h3, .instagram h2, .tags h3 {
     font-size: 1.3em;
@@ -4378,7 +4379,8 @@ ul.qty li p {
   font-size:15px;
   line-height:1.2em;
 }
-.offer-text input[type="button"]{
+.offer-text input[
+type="submit"]{
   padding: 1em 2.3em 1em 0.6em;
   border:none;
   outline:none;
@@ -4390,7 +4392,8 @@ ul.qty li p {
   text-transform:uppercase;
   margin-top:1em;
 }
-.offer-text input[type="button"]:hover{
+.offer-text input[
+type="submit"]:hover{
   background:#5BBD50;
 }
 .m_3 {
