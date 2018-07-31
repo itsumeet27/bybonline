@@ -1,12 +1,10 @@
 <?php
 include('includes/header.php');
-
 ?>
 <head>
 
 <link rel="stylesheet" type="text/css" href="css/custom.css">
 <style type="text/css">
-
 .SuccessField {
     border-color: #458845 !important;
     -webkit-box-shadow: 0 0 7px #9acc9a !important;
@@ -14,11 +12,9 @@ include('includes/header.php');
     box-shadow: 0 0 7px #9acc9a !important;
     background: #f9f9f9 url(../images/valid.png) no-repeat 98% center !important
 }
-
 .btn-xs{
     line-height: 28px;
 }
-
 /*login form*/
 .login-container{
     margin-top:30px ;
@@ -29,8 +25,7 @@ include('includes/header.php');
   margin-bottom: 10px;
   position: relative;
 }
-
-.login-container input[type=text], input[type=password] {
+.login-container input[type=text], input[type=password],textarea {
   height: 44px;
   font-size: 16px;
   width: 100%;
@@ -52,7 +47,6 @@ include('includes/header.php');
   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 }
-
 .login-container-submit {
   /* border: 1px solid #3079ed; */
   border: 0px;
@@ -64,7 +58,6 @@ include('includes/header.php');
   font-size: 14px;
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
 }
-
 .login-container-submit:hover {
   /* border: 1px solid #2f5bb7; */
   border: 0px;
@@ -72,16 +65,12 @@ include('includes/header.php');
   background-color: #357ae8;
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
-
 .login-help{
   font-size: 12px;
 }
-
 .asterix{
     background:#f9f9f9 url(../images/red_asterisk.png) no-repeat 98% center !important;
 }
-
-
 /*
  * BOOTSTRAP
  */
@@ -100,11 +89,9 @@ include('includes/header.php');
 .input-sm, .form-horizontal .form-group-sm .form-control{
     border-radius: 1px;
 }
-
 .panel-info {
     border-color: #999;
 }
-
 .panel-heading {
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;
@@ -119,26 +106,21 @@ include('includes/header.php');
 .panel-info > .panel-heading {
     background-image: linear-gradient(to bottom, #555 0px, #888 100%);
 }
-
 hr {
     border-color: #999 -moz-use-text-color -moz-use-text-color;
 }
-
 .panel-footer {
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
     border-top: 1px solid #999;
 }
-
 .btn-link {
     color: #888;
 }
-
 hr{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
 /** MEDIA QUERIES **/
 @media only screen and (max-width: 989px){
     .span1{
@@ -146,13 +128,11 @@ hr{
         clear:both;
     }
 }
-
 @media only screen and (max-width: 764px){
     .inverse-1{
         float:right;
     }
 }
-
 @media only screen and (max-width: 586px){
     .cart-titles{
         display:none;
@@ -161,11 +141,9 @@ hr{
         margin-bottom: 1px;
     }
 }
-
 .form-control {
     border-radius: 1px;
 }
-
 @media only screen and (max-width: 486px){
     .col-xss-12{
         width:100%;
@@ -286,53 +264,25 @@ hr{
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Country:</strong></div>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" name="country" value="" />
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-6 col-xs-12">
-                                    <strong>First Name:</strong>
-                                    <input type="text" name="first_name" class="form-control" value="" />
-                                </div>
-                                <div class="span1"></div>
-                                <div class="col-md-6 col-xs-12">
-                                    <strong>Last Name:</strong>
-                                    <input type="text" name="last_name" class="form-control" value="" />
-                                </div>
-                            </div>
-                            <div class="form-group">
                                 <div class="col-md-12"><strong>Address:</strong></div>
                                 <div class="col-md-12">
                                     <input type="text" name="address" class="form-control" value="" />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>City:</strong></div>
-                                <div class="col-md-12">
-                                    <input type="text" name="city" class="form-control" value="" />
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-12"><strong>State:</strong></div>
-                                <div class="col-md-12">
-                                    <input type="text" name="state" class="form-control" value="" />
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-12"><strong>Zip / Postal Code:</strong></div>
+                                <div class="col-md-12"><strong>Pin Code:</strong></div>
                                 <div class="col-md-12">
                                     <input type="text" name="zip_code" class="form-control" value="" />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Phone Number:</strong></div>
-                                <div class="col-md-12"><input type="text" name="phone_number" class="form-control" value="" /></div>
+                                <div class="col-md-12"><strong>Mobile Number:</strong></div>
+                                <div class="col-md-12"><input type="text" name="mobile_number" class="form-control" value="" /></div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Email Address:</strong></div>
-                                <div class="col-md-12"><input type="text" name="email_address" class="form-control" value="" /></div>
+                                <div class="col-md-12"><strong>Cake Message:</strong></div>
+                                <div class="col-md-12"><input type="text"  name="cake_message" class="form-control" value="" /></div>
+                                
                             </div>
                         </div>
 

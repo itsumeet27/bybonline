@@ -6,28 +6,22 @@
 	<!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="css/custom.css">
         <style type="text/css">
-
-
         	html, body{
         		width: 100%;
   				overflow-x: hidden;
 			}
-
 			.row{
 				width: 100%;
 				padding: 10%;
 				margin-right: 0px;
 				margin-left: 0px;
 			}
-
-
 			.container{
 				box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
 				width: 100%;
 				padding: 5%;
 				border-radius: 15px;
 			}
-
 			.row{
 				background: rgb(255,255,255); /* Old browsers */
 				background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
@@ -35,42 +29,33 @@
 				background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				
 			}
-
 			.card-img{
 				padding: 1%;
 				background-color: #fff;
-
 			}
-
 			.card-img img{
 				width: 100%;
 				padding: 5%;
 				vertical-align: middle;
 			}
-
 			.card-head h3{
 				padding: 0.5em;
 			}
-
 			.quantity, .price, .card-desc{
 				padding-left: 1em;
 				padding-bottom: 1em; 
 			}
-
 			.card-desc p{
 				text-align: justify;
 				padding-top: 2%;
 				font-size: 15px;
 			}
-
 			input[type='number']{
 				width: 25%;
 			}
-
 			.checkbtn{
 				padding: 1em;
 			}
-
 			.checkbtn a{
 				padding: 8px 15px;
 				text-decoration: none;
@@ -79,14 +64,17 @@
 				color: #f4f4f4;
 				border: 1px solid #f4f4f4;
 			}
-
 			.checkbtn a:hover{
 				transition-duration: 0.4s;
 				color: #444;
 				background-color: #f4f4f4;
 				border: 1px solid #444;
 			}
-
+			@media (max-width: 1280px)
+			{
+            .header-right1 nav {
+                       top: -26% !important;
+               }             }
         </style> 
 </head>
 
@@ -209,7 +197,5 @@
 		</div>
 	</div>
 <?php
-
 	include('includes/footer.php');
-
 ?>

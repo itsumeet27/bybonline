@@ -61,7 +61,7 @@
 								<div class="offer-text">
 									<h4>Olister Combo pack lorem</h4>
 									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-									<input type="button" value="Grab It">
+									<input type="submit" value="Grab It">
 									<span></span>
 								</div>
 								<div class="clearfix"></div>
@@ -75,7 +75,7 @@
 								<div class="offer-text">
 									<h4>Chicken Jumbo pack lorem</h4>
 									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-									<input type="button" value="Grab It">
+									<input type="submit" value="Grab It">
 									<span></span>
 								</div>
 								<div class="clearfix"></div>
@@ -89,7 +89,7 @@
 								<div class="offer-text">
 									<h4>Crab Combo pack lorem</h4>
 									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-									<input type="button" value="Grab It">
+									<input type="submit" value="Grab It">
 									<span></span>
 								</div>
 								
@@ -104,7 +104,7 @@
 								<div class="offer-text">
 									<h4>Chicken Jumbo pack lorem</h4>
 									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-									<input type="button" value="Grab It">
+									<input type="submit" value="Grab It">
 									<span></span>
 								</div>
 								
