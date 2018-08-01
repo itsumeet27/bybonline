@@ -1,6 +1,5 @@
 <?php
 include('includes/header.php');
-
 ?>
 <head>  
 	<style type="text/css">
@@ -8,6 +7,23 @@ include('includes/header.php');
         		width: 100%;
   				overflow-x: hidden;
 			}
+
+ input[
+type="submit"]{
+  border:none;
+  outline:none;
+  border-radius:0px;
+  color:#fff;
+  background:#E24425;
+  font-size:17px;
+  font-weight:600;
+  text-transform:uppercase;
+  padding: 0.6em 0.9em;
+}
+ input[
+type="submit"]:hover{
+  background:#5BBD50;
+}
 	</style>     
 <!-- //for-mobile-apps -->
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
@@ -62,9 +78,10 @@ jQuery(document).ready(function($) {
 							<img src="images/55.jpg" alt="" />
 							<div>
 								<h5>Bake Your Bread</h5>
-								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>					
 							</div>
-						</a>
+						</a><br>
+						<center><input type="submit" value="Grab It"></center>
 					</li>
 					<li>
 						<a href="images/66.jpg" class=" mask b-link-stripe b-animate-go swipebox"  title="">
@@ -73,7 +90,8 @@ jQuery(document).ready(function($) {
 								<h5>Bake Your Bread</h5>
 								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
 							</div>
-						</a>
+						</a><br>
+						<center><input type="submit" value="Grab It"></center>
 					</li>
 					<li>
 						<a href="images/77.jpg" class=" mask b-link-stripe b-animate-go swipebox"  title="">
@@ -82,7 +100,8 @@ jQuery(document).ready(function($) {
 								<h5>Bake Your Bread</h5>
 								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
 							</div>
-						</a>
+						</a><br>
+						<center><input type="submit" value="Grab It"></center>
 					</li>
 					<li>
 						<a href="images/88.jpg" class=" mask b-link-stripe b-animate-go swipebox"  title="">
@@ -91,7 +110,8 @@ jQuery(document).ready(function($) {
 								<h5>Bake Your Bread</h5>
 								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
 							</div>
-						</a>
+						</a><br>
+						<center><input type="submit" value="Grab It"></center>
 					</li>
 					<li>	
 						<a href="images/99.jpg" class=" mask b-link-stripe b-animate-go swipebox"  title="">
@@ -100,7 +120,8 @@ jQuery(document).ready(function($) {
 								<h5>Bake Your Bread</h5>
 								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
 							</div>
-						</a>
+						</a><br>
+						<center><input type="submit" value="Grab It"></center>
 					</li>
 					<li>
 						<a href="images/55.jpg" class=" mask b-link-stripe b-animate-go swipebox"  title="">
@@ -109,7 +130,8 @@ jQuery(document).ready(function($) {
 								<h5>Bake Your Bread</h5>
 								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
 							</div>
-						</a>
+						</a><br>
+						<center><input type="submit" value="Grab It"></center>
 					</li>
 					<li>
 						<a href="images/66.jpg" class=" mask b-link-stripe b-animate-go swipebox"  title="">
@@ -118,7 +140,8 @@ jQuery(document).ready(function($) {
 								<h5>Bake Your Bread</h5>
 								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
 							</div>
-						</a>
+						</a><br>
+						<center><input type="submit" value="Grab It"></center>
 					</li>
 					<li>
 						<a href="images/77.jpg" class=" mask b-link-stripe b-animate-go swipebox"  title="">
@@ -127,7 +150,8 @@ jQuery(document).ready(function($) {
 								<h5>Bake Your Bread</h5>
 								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
 							</div>
-						</a>
+						</a><br>
+						<center><input type="submit" value="Grab It"></center>
 					</li>
 					<li>
 						<a href="images/88.jpg" class=" mask b-link-stripe b-animate-go swipebox"  title="">
@@ -136,9 +160,9 @@ jQuery(document).ready(function($) {
 								<h5>Bake Your Bread</h5>
 								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
 							</div>
-						</a>
-					</li>
-					
+						</a><br>
+						<center><input type="submit" value="Grab It"></center>
+					</li>					
 				</ul>
 			</section>
 			<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
@@ -146,41 +170,11 @@ jQuery(document).ready(function($) {
 				$(function() {
 				
 					$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
-
 				});
 			</script>
 		</div>
 	</div>
-</div>
-<!--<div class="container" style="margin-top: -70px;">
-	<div class="row">
-		<div class="col-md-4"></div>
-			<div class="col-md-4">
-			<nav>
-			  <ul class="pagination paging animated wow fadeInUp animated" data-wow-duration="1200ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 500ms; animation-name: fadeInUp;">
-				<li>
-				  <a href="#" aria-label="Previous">
-					<span aria-hidden="true">«</span>
-				  </a>
-				</li>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li>
-				  <a href="#" aria-label="Next">
-					<span aria-hidden="true">»</span>
-				  </a>
-				</li>
-			  </ul>
-			</nav>
-		</div>	
-		<div class="col-md-4"></div>
-	</div>
-</div>-->
-	
-<!-- //cake category -->
+</div><br>
 <?php
 include('includes/footer.php');
 ?>
