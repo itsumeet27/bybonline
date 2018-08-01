@@ -16,7 +16,7 @@
 				margin-right: 0px;
 				margin-left: 0px;
 			}
-			.container{
+			.container-fluid{
 				box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
 				width: 100%;
 				padding: 5%;
@@ -69,12 +69,7 @@
 				color: #444;
 				background-color: #f4f4f4;
 				border: 1px solid #444;
-			}
-			@media (max-width: 1280px)
-			{
-            .header-right1 nav {
-                       top: -26% !important;
-               }             }
+			}             }
         </style> 
 </head>
 
@@ -82,7 +77,7 @@
 		<h1 align="center" id="user-head">Cart</h1>
 	<hr>
 	<div class="row">
-		<div class="container">		
+		<div class="container-fluid">		
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="col-12 col-md-6">
 					<div class="card-img">
@@ -120,7 +115,7 @@
 			</div>
 		</div>
 		<br><br>
-		<div class="container">
+		<div class="container-fluid">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="col-12 col-md-6">
 					<div class="card-img">
@@ -158,7 +153,7 @@
 			</div>
 		</div>
 		<br><br>
-		<div class="container">
+		<div class="container-fluid">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="col-12 col-md-6">
 					<div class="card-img">
