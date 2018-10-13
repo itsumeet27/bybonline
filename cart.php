@@ -1,196 +1,145 @@
 <?php
-    include('includes/header.php');
+
+	require_once 'core/init.php';
+	include 'includes/header.php';
+
+	if($cart_id != ''){
+		$cartQ = $db->query("SELECT * FROM cart WHERE id = '{$cart_id}'");
+		$result = mysqli_fetch_assoc($cartQ);
+		$items = json_decode($result['items'],true);
+		$i = 1;
+		$sub_total = 0;
+		$item_count = 0;
+	}
 ?>
+<div class="container">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="row">
+			<h2 class="text-center">My Shopping Cart</h2><hr>
+			<?php if($cart_id == ''): ?>
+				<div class="bg-danger">
+					<p class="text-center text-danger">
+						Your shopping cart is empty!
+					</p>
+				</div>
+			<?php else: ?>
+				<table class="table table-striped table-responsive">
+					<thead>
+						<th>#</th>
+						<th>Item</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Subtotal</th>
+					</thead>
+					<tbody>
+						<?php
+							foreach($items as $item){
+								$product_id = $item['id'];
+								$productQ = $db->query("SELECT * FROM products WHERE id = '{$product_id}'");
+								$product = mysqli_fetch_assoc($productQ);								
+							?>
 
-<head>
-	<!-- Custom CSS -->
-        <link rel="stylesheet" type="text/css" href="css/custom.css">
-        <style type="text/css">
-        	html, body{
-        		width: 100%;
-  				overflow-x: hidden;
-			}
-			.row{
-				width: 100%;
-				padding: 10%;
-				margin-right: 0px;
-				margin-left: 0px;
-			}
-			.container-fluid{
-				box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
-				width: 100%;
-				padding: 5%;
-				border-radius: 15px;
-			}
-			.row{
-				background: rgb(255,255,255); /* Old browsers */
-				background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				
-			}
-			.card-img{
-				padding: 1%;
-				background-color: #fff;
-			}
-			.card-img img{
-				width: 100%;
-				padding: 5%;
-				vertical-align: middle;
-			}
-			.card-head h3{
-				padding: 0.5em;
-			}
-			.quantity, .price, .card-desc{
-				padding-left: 1em;
-				padding-bottom: 1em; 
-			}
-			.card-desc p{
-				text-align: justify;
-				padding-top: 2%;
-				font-size: 15px;
-			}
-			input[type='number']{
-				width: 25%;
-			}
-			.checkbtn{
-				padding: 1em;
-			}
-			.checkbtn a{
-				padding: 8px 15px;
-				text-decoration: none;
-				border-radius: 2px;
-				background-color: #444;
-				color: #f4f4f4;
-				border: 1px solid #f4f4f4;
-			}
-			.checkbtn a:hover{
-				transition-duration: 0.4s;
-				color: #444;
-				background-color: #f4f4f4;
-				border: 1px solid #444;
-			}             }
-        </style> 
-</head>
+							<tr>
+								<td><?=$i;?></td>
+								<td><?=$product['title']; ?></td>
+								<td><?=money($product['price']);?></td>
+								<td>
+									<button class="btn btn-xs btn-default" onclick="update_cart('removeone','<?=$product['id'];?>');">-</button>
+									<?=$item['quantity'];?>
+									<?php if($item['quantity'] < 10): ?>
+										<button class="btn btn-xs btn-default" onclick="update_cart('addone','<?=$product['id'];?>');">+</button>
+									<?php else: ?>
+										<span class="text-danger">Max</span>
+									<?php endif; ?>
+								</td>
+								<td><?=money($item['quantity'] * $product['price']);?></td>
+							</tr>
 
-	<hr>
-		<h1 align="center" id="user-head">Cart</h1>
-	<hr>
-	<div class="row">
-		<div class="container-fluid">		
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-12 col-md-6">
-					<div class="card-img">
-						<img class="img-responsive" src="images/cake/cake2.jpg">
-					</div>
-				</div>	  			
-	  			<div class="col-8 col-md-6">
-	  				<hr>
-	  					<div class="card-head">
-	  						<h3 align="center">Product Name</h3>
-	  					</div>
-	  					<div class="card-desc">
-	  						<label>Description</label>
-	  						<p>
-	  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	  							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	  							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	  							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	  							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	  							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	  						</p>
-	  					</div>
-	  					<div class="quantity">
-	  						<label>Quantity: &nbsp;</label>
-	  						<input type="number" name="quantity">
-	  					</div>
-	  					<div class="price">
-	  						<label>Total Price: &#8377;</label>350
-	  					</div>
-	  					<div class="checkbtn">
-	  						<a href="#">Proceed to Checkout</a>
-	  					</div>
-	  				<hr>
-			  	</div>
-			</div>
-		</div>
-		<br><br>
-		<div class="container-fluid">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-12 col-md-6">
-					<div class="card-img">
-						<img class="img-responsive" src="images/cake/cake6.jpg">
-					</div>
-				</div>	  			
-	  			<div class="col-8 col-md-6">
-	  				<hr>
-	  					<div class="card-head">
-	  						<h3 align="center">Product Name</h3>
-	  					</div>
-	  					<div class="card-desc">
-	  						<label>Description</label>
-	  						<p>
-	  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	  							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	  							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	  							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	  							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	  							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	  						</p>
-	  					</div>
-	  					<div class="quantity">
-	  						<label>Quantity: &nbsp;</label>
-	  						<input type="number" name="quantity">
-	  					</div>
-	  					<div class="price">
-	  						<label>Total Price: &#8377;</label>350
-	  					</div>
-	  					<div class="checkbtn">
-	  						<a href="#">Proceed to Checkout</a>
-	  					</div>
-	  				<hr>
-			  	</div>
-			</div>
-		</div>
-		<br><br>
-		<div class="container-fluid">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-12 col-md-6">
-					<div class="card-img">
-						<img class="img-responsive" src="images/cake/cake5.jpg">
-					</div>
-				</div>	  			
-	  			<div class="col-8 col-md-6">
-	  				<hr>
-	  					<div class="card-head">
-	  						<h3 align="center">Product Name</h3>
-	  					</div>
-	  					<div class="card-desc">
-	  						<label>Description</label>
-	  						<p>
-	  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	  							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	  							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	  							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	  							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	  							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	  						</p>
-	  					</div>
-	  					<div class="quantity">
-	  						<label>Quantity: &nbsp;</label>
-	  						<input type="number" name="quantity">
-	  					</div>
-	  					<div class="price">
-	  						<label>Total Price: &#8377;</label>350
-	  					</div>
-	  					<div class="checkbtn">
-	  						<a href="#">Proceed to Checkout</a>
-	  					</div>
-	  				<hr>
-			  	</div>
-			</div>
+						<?php 
+								$i++;
+								$item_count += $item['quantity'];
+								$sub_total += ($product['price'] * $item['quantity']);
+							} 
+							/*$tax = TAXRATE * $sub_total;
+							$tax = number_format($tax,2);*/
+							$grand_total = $sub_total;
+						?>
+					</tbody>
+				</table>
+				<table class="table table-striped table-responsive">
+					<legend>Totals</legend>
+					<thead class="totals-table-header">
+						<th>Total Items</th>
+						<!--<th>Sub Total</th>
+						<th>Tax</th>-->
+						<th>Grand Total</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td><?=$item_count;?></td>
+							<!--<td><?=money($sub_total);?></td>
+							<td><?=money($tax);?></td>-->
+							<td class="bg-success"><?=money($grand_total);?></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- Checkout Modal -->
+				<a href="payu/checkout.php" class="btn btn-primary btn-md pull-right"><span class="glyphicon glyphicon-shopping-cart"> </span>
+				  Checkout Now
+				</a>
+			<?php endif; ?>
 		</div>
 	</div>
-<?php
-	include('includes/footer.php');
-?>
+</div>
+
+<script type="text/javascript">
+
+	function back_address(){
+		jQuery('#payment-errors').html("");
+		jQuery('#step1').css("display","block");
+		jQuery('#step2').css("display","none");
+		jQuery('#next_button').css("display","inline-block");
+		jQuery('#back_button').css("display","none");
+		jQuery('#checkout_button').css("display","none");
+		jQuery('#checkoutModalLabel').html("<h4 class='modal-title text-center'>Shipping Address</h4>");
+	}
+
+	function check_address(){
+		var data = {
+			'first_name' : jQuery('#first_name').val(),
+			'last_name' : jQuery('#last_name').val(),
+			'email' : jQuery('#email').val(),
+			'address1' : jQuery('#address').val(),
+			'address2' : jQuery('#street_name').val(),
+			'city' : jQuery('#city').val(),
+			'state' : jQuery('#state').val(),
+			'zip' : jQuery('#zip').val(),
+			'country' : jQuery('#country').val(),
+		};
+		jQuery.ajax({
+			url : '/khadi/admin/parsers/check_address.php',
+			method : 'POST',
+			data : data,
+			success : function(data){
+				if(data != 'passed'){
+					jQuery('#payment-errors').html(data);					
+				}
+				if(data == 'passed'){
+					jQuery('#payment-errors').html("");
+					jQuery('#step1').css("display","none");
+					jQuery('#step2').css("display","block");
+					jQuery('#next_button').css("display","none");
+					jQuery('#back_button').css("display","inline-block");
+					jQuery('#checkout_button').css("display","inline-block");
+					jQuery('#checkoutModalLabel').html("<h4 class='modal-title text-center'>Proceed to the payment gateway</h4>");
+				}
+			},
+			error : function(){
+				alert('Something went wrong');
+			},
+		});
+	}
+</script>
+
+<?php include 'includes/footer.php'; ?>
